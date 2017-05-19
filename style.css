@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: Helvetica;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    height: 11%;
+    background-color: #38424a;
+    box-shadow: 1px 1px #30383e;
+}
+
+nav li {
+    padding-top: 0.75%;
+    list-style: none;
+    font-weight: 100;
+    display: inline-block;
+    float: right;
+}
+
+nav li a:link,
+nav li a:visited {
+    text-decoration: none;
+    color: #f8f8f8;
+    margin: 30px;
+    font-size: 40px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .2s;
+}
+
+nav li a:hover,
+nav li a:active {
+    color: #d1d1d1;
+    border-bottom: 2px solid #d1d1d1;
+}
+
+/* HEADER */
+
+#header-img {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(img/french-fries.jpg);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* HEADINGS */
+h1 {  /* big display title */
+    z-index: 1;
+    font-size: 7em;
+    color: #f8f8f8;
+    position: absolute;
+    bottom: 100px;
+    left: 15px;
+} 
+
+h2 {  /* section headers */
+    font-weight: 400;
+    font-size: 3em;
+    color: #484847;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/** form feedback output **/
+h3 {  
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+    color: #484847;
+}
+
+h3.form-result {
+    color: green;
+}
+
+p { /* history */
+    margin: 3% 10% 0% 10%;
+    padding-bottom: 1%;
+    font-weight: 100;
+    font-size: 19px;
+    line-height: 150%;
+}
+
+/* SECTION */
+section {
+    padding-top: 30px;
+    background-color: #f8f8f8;
+    padding-bottom: 30px;
+}
+
+section.darker {
+    background-color: #e6e6e6;
+}
+
+/* GALLERY FOR CHECKBOXES */
+ul.gallery {
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.gallery li {
+    display: inline-block;
+    position: relative;
+}
+
+ul.gallery li img {
+    width: 100px;
+    height: 100px;
+}
+
+span.gallery-label {
+    /*background: rgba(0, 0, 0, 0.5);*/
+    color: #f8f8f8;
+    opacity: 0;
+    /*transition: opacity 500ms;*/
+    position: absolute;
+    /*display: table;*/
+    top: 0;
+    left: 0;
+    /*line-height: 100px;*/
+    height: 100px;
+    width: 100px;
+}
+
+ul.gallery li:hover span.gallery-label {
+    opacity: 1;
+}
+
+.gallery img {
+    align-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+/* CHECKBOX */
+input[type="checkbox"] {
+    transform: scale(2.0, 2.0);
+    margin: 10px 5px 5px 10px;
+}
+
+/* FORM */
+input[type="text"] {
+    height: 50px;
+    width: 400px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.center {
+    text-align: center;
+}
